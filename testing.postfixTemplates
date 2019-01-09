@@ -4,7 +4,7 @@
     ERROR    →  assert.NoError(t, $expr$, "$end$")
 
 .assertEqual : assert equal
-    ANY      →  assert.Equal(t, $expr$, $VAR0$, "$end$")
+    ANY      →  assert.Equal(t, $VAR0$, $expr$, "$end$")
 
 .assertNil : assert nil
     NIL      →  assert.Nil(t, $expr$, "$end$")
