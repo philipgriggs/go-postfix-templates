@@ -1,31 +1,31 @@
 ## zap operations ##
 
-.zapInfo : zerolog info
+.zapInfo : zap info
     STRING     →  zap.L().Info($expr$)
 
-.zapDebug : zerolog debug
+.zapDebug : zap debug
     STRING     →  zap.L().Debug($expr$)
 
-.zapWarn : zerolog warn
+.zapWarn : zap warn
     STRING     →  zap.L().Warn($expr$)
 
 .zapError : zap error
     ERROR      →  zap.L().Error("$end$", zap.Error($expr$))
 
-.zapFatal : zerolog fatal
+.zapFatal : zap fatal
     STRING     →  zap.L().Fatal($expr$)
 
-.zapPanic : zerolog panic
+.zapPanic : zap panic
     STRING     →  zap.L().Panic($expr$)
 
-.zapDebugInt : zerolog debug int
+.zapDebugInt : zap debug int
     INT        →  zap.L().Debug("$VAR0$", zap.Int("$VAR1$", $expr$))
 
-.zapDebugStr : zerolog debug string
+.zapDebugStr : zap debug string
     STRING     →  zap.L().Debug("$VAR0$", zap.String("$VAR1$", $expr$))
 
-.zapDebugFloat : zerolog debug float
+.zapDebugFloat : zap debug float
     FLOAT      →  zap.L().Debug("$VAR0$", zap.Float64("$VAR1$", $expr$))
 
-.zapDebugBs : zerolog debug byte slice
+.zapDebugBs : zap debug byte slice
     BYTESLICE  →  zap.L().Debug("$VAR0$", zap.ByteString("$VAR1$", $expr$))
