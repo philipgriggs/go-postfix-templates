@@ -7,7 +7,7 @@
 	ANY        →  $VAR0$, $VAR1$ := json.Marshal($expr$)
 
 .unmarshal : json unmarshal
-	BYTESLICE  →  $VAR0$ := json.Unmarshal($expr$, $end$)
+	BYTESLICE  →  $VAR1$ := json.Unmarshal($expr$, $VAR0$)
 
 .now : now unix
 	INT64      →  $expr$ = time.Now().Unix()
