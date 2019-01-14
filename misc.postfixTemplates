@@ -1,7 +1,7 @@
 ## others ##
 
 .wrap : wrap err
-	ERROR      →  errors.wrap($expr$, "$end$")
+	ERROR      →  errors.Wrap($expr$, "$end$")
 
 .marshal : json marshal
 	ANY        →  $VAR0$, $VAR1$ := json.Marshal($expr$)
