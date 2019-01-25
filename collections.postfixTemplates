@@ -16,3 +16,6 @@
 
 .end : get last element
 	ARRAY  →  $expr$[len($expr$)-1]
+	
+.deleteElem : delete an element
+	ARRAY  →  $expr$ = append($expr$[:$VAR0$], $expr$[$VAR0$+1:]...)
