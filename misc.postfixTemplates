@@ -11,3 +11,6 @@
 
 .now : now unix
 	INT64      →  $expr$ = time.Now().Unix()
+
+.split : split string
+	STRING     →  strings.Split($expr$, "$VAR0$")
