@@ -1,0 +1,7 @@
+## general use ##
+
+.ret : return value
+    ANY →  return $expr$
+
+.retn : return value, nil
+    ANY →  return $expr$, nil
