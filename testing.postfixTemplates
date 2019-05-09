@@ -20,3 +20,18 @@
 
 .assertLen : assert length
     NIL      →  assert.Len(t, $expr$, $VAR0$, "$end$")
+
+
+## create tase case ##
+
+.test : generate test case
+    ANY  →  func Test$expr$(t *testing.T) {\
+                  $END$\
+               }
+
+.bench : generate benchmark case
+    ANY → func Benchmark$expr$(b *testing.B) {\
+                for i := 0; i < b.N; i++ {\
+                  $END$\
+             }\
+}
