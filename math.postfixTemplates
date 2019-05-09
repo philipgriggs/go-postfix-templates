@@ -1,0 +1,23 @@
+## math operation ##
+.abs : math.Abs()
+    INT → math.Abs(float64($expr$))
+    INT64 → math.Abs(float64($expr$))
+    FLOAT → math.Abs(float64($expr$))
+    FLOAT32 → math.Abs(float64($expr$))
+    FLOAT64 → math.Abs($expr$)
+
+
+.floor : math.Floor()
+    INT → math.Floor(float64($expr$))
+    INT64 → math.Floor(float64($expr$))
+    FLOAT → math.Floor(float64($expr$))
+    FLOAT32 → math.Floor(float64($expr$))
+    FLOAT64 → math.Floor($expr$)
+
+
+.ceil : math.Ceil()
+    INT → math.Ceil(float64($expr$))
+    INT64 → math.Ceil(float64($expr$))
+    FLOAT → math.Ceil(float64($expr$))
+    FLOAT32 → math.Ceil(float64($expr$))
+    FLOAT64 → math.Ceil($expr$)
