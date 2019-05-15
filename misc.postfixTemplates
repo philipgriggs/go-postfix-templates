@@ -14,3 +14,9 @@
 
 .split : split string
 	STRING     →  strings.Split($expr$, "$VAR0$")
+
+.ret : return value
+    ANY →  return $expr$
+
+.retn : return value, nil
+    ANY →  return $expr$, nil
