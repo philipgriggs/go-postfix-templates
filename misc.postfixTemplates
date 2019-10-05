@@ -4,7 +4,7 @@
 	ERROR      →  errors.Wrap($expr$, "$end$")
 	
 .wrapf : fmt wrap err (go 1.13)
-	ERROR      →  fmt.Errorf("$VAR0$: %w", $expr$)$end$
+	ERROR      →  fmt.Errorf("$VAR0$: %w", $expr$)
 
 .marshal : json marshal
 	ANY        →  $VAR0$, $VAR1$ := json.Marshal($expr$)
