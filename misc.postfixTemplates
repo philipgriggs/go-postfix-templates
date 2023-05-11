@@ -18,6 +18,9 @@
 .split : split string
 	STRING     →  strings.Split($expr$, "$VAR0$")
 
+.contains : string contains
+	STRING     →  strings.Contains($expr$, "$VAR0$")
+
 .ret : return value
     ANY →  return $expr$
 
